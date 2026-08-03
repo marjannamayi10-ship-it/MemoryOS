@@ -154,6 +154,7 @@ export function PricingGrid({
                   planId={paidPlanId}
                   interval={interval}
                   label={plan.cta}
+                  onDark={Boolean(plan.highlighted)}
                   className={`inline-flex h-11 w-full items-center justify-center px-4 text-sm font-semibold transition ${
                     plan.highlighted
                       ? "bg-[var(--signal)] text-[var(--ink)] hover:bg-[var(--signal-soft)]"
